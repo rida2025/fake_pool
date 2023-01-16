@@ -7,16 +7,10 @@ void ft_putchar(char c)
 
 void ft_print_comb2(void)
 {
-	int a = -1;
-	int b = 0;
-	
-	while(a < 98)
+	for (int a = 0;a < 99;a++)
 	{
-		a++;
-		b = a;
-		while(b < 99)
+		for (int b = a + 1;b < 100;b++)
 		{
-			b++;
 			ft_putchar(48+ a / 10);
 			ft_putchar(48+ a % 10);
 			ft_putchar(' ');
@@ -26,7 +20,6 @@ void ft_print_comb2(void)
 			{
 				ft_putchar(',');
 			}
-			
 		}
 	}
 }
@@ -35,4 +28,5 @@ void ft_print_comb2(void)
 int main()
 {
 	ft_print_comb2();
+	return 0;
 }
