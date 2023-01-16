@@ -1,0 +1,8 @@
+git add .
+git commit -m "changes"
+git push
+git pull
+
+those are the commands u have to do (:
+remember to chack the status with the command
+git status
