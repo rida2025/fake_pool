@@ -7,26 +7,30 @@ void ft_putchar(char c)
 
 void ft_sort_int_tap(int* tab, int size)
 {
-    int ss = 0;
 	int tmp[size];
 	int j = 0;
-	int x = size - 1;
+	int k=0;
 	while(j<99)
 	{
-		for(int i = 0;i<size+1;i++)
+	    int i = 0;
+		while(i<size)
 		{
 			if(tab[i]==j)
 			{
-				tmp[ss] = tab[i];
-				ss++;
+				tmp[k] = tab[i];
+				k++;
 			}
+			i++;
 		}
 		j++;
 	}
-	for(int k=0;k<x+1;k++)
+	k=0;
+	while(k<size)
 	{
 		ft_putchar(48+tmp[k]);
+		k++;
 	}
+	
 }
 
 int main(void)
